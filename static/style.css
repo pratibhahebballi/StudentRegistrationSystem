@@ -1,0 +1,273 @@
+
+/* =====================================
+   STUDENT REGISTRATION SYSTEM
+   Main Website Styling
+   ===================================== */
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6fb;
+    color: #263238;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Main headings */
+h1 {
+    color: #263b80;
+    text-align: center;
+    font-size: 38px;
+    margin: 20px 0 28px;
+}
+
+h2 {
+    color: #263b80;
+}
+
+/* Paragraphs and links */
+p {
+    font-size: 16px;
+}
+
+a {
+    color: #344eaa;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #1d2f70;
+}
+
+/* Registration, search and edit forms */
+form {
+    background-color: white;
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #263238;
+}
+
+/* Text inputs and dropdowns */
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #ccd2df;
+    border-radius: 7px;
+    background-color: white;
+    color: #263238;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #344eaa;
+    box-shadow: 0 0 0 3px rgba(52, 78, 170, 0.12);
+}
+
+/* General buttons */
+button {
+    display: inline-block;
+    padding: 11px 18px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #344eaa;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #263b80;
+}
+
+/* Main registration form button */
+form button[type="submit"] {
+    width: 100%;
+}
+
+/* Search form */
+.search-form {
+    max-width: 625px;
+    margin: 25px auto 30px;
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.08);
+}
+
+.search-form label {
+    margin-top: 15px;
+}
+
+.search-form input {
+    width: 100%;
+}
+
+.search-form button {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Search form Show All link */
+.search-form a {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+/* Registered students table */
+table {
+    width: 95%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white;
+    table-layout: auto;
+}
+
+/* Table headings and cells */
+th,
+td {
+    padding: 12px 15px;
+    border: 1px solid #d5dbea;
+    text-align: left;
+    overflow-wrap: anywhere;
+    vertical-align: middle;
+}
+
+/* Table heading row */
+th {
+    background-color: #344eaa;
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternate table rows */
+tbody tr:nth-child(even) {
+    background-color: #f8f9fd;
+}
+
+/* Highlight table rows */
+tbody tr:hover {
+    background-color: #edf1fc;
+}
+
+/* Actions column */
+.actions {
+    min-width: 110px;
+    white-space: normal;
+}
+
+/* Edit link */
+.actions a {
+    display: inline-block;
+    margin: 4px 8px 4px 0;
+}
+
+/* Delete form inside the table */
+.actions form {
+    display: inline-block;
+    width: auto;
+    max-width: none;
+    margin: 5px 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Delete button inside the table */
+.actions .delete-btn {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 7px 12px;
+    background-color: #c0392b;
+    color: white;
+    font-size: 14px;
+}
+
+.actions .delete-btn:hover {
+    background-color: #962d22;
+}
+
+/* Footer or navigation paragraphs */
+body > p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Header and navigation, if used in HTML */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav a {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Responsive design for mobile screens */
+@media screen and (max-width: 700px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    form,
+    .search-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    .actions {
+        min-width: 85px;
+    }
+
+    .actions .delete-btn {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}
